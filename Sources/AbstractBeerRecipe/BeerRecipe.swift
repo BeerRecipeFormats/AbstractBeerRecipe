@@ -19,5 +19,5 @@
 //
 
 public struct BeerRecipe {
-  
+  public var header: Header
 }
