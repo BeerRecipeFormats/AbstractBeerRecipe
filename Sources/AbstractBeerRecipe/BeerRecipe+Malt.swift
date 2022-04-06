@@ -1,5 +1,5 @@
 //
-//  BeerRecipe.swift
+//  BeerRecipe+Malt.swift
 //  AbstractBeerRecipe
 //
 //  Created by Thomas Bonk on 06.04.22.
@@ -18,8 +18,13 @@
 //  limitations under the License.
 //
 
-public struct BeerRecipe {
-  public var header   : Header
-  public var malts    : [Malt]
-  public var mashing  : MashSteps
+import Foundation
+
+public extension BeerRecipe {
+  
+  struct Malt {
+    public var name     : String
+    public var amount   : Double
+    public var unit     : String
+  }
 }
