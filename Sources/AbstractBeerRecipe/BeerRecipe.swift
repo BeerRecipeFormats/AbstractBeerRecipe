@@ -24,10 +24,10 @@ public struct BeerRecipe {
   
   // MARK: - Enums
   
-  public enum `Type` {
-    case extract
-    case partialMash
-    case allGrain
+  public enum `Type`: String {
+    case extract      = "Extract"
+    case partialMash  = "Partial Mash"
+    case allGrain     = "All Grain"
   }
   
   
