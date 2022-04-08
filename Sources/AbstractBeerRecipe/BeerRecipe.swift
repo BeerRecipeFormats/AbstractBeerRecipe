@@ -24,7 +24,7 @@ public struct BeerRecipe {
   
   // MARK: - Enums
   
-  public enum `Type`: String, RawRepresentable {
+  public enum RecipeType: String, RawRepresentable {
     public typealias RawValue = String
     
     case extract      = "Extract"
@@ -35,7 +35,7 @@ public struct BeerRecipe {
   
   // MARK: - Initialization
   
-  public init(name: String, type: `Type`) {
+  public init(name: String, type: RecipeType) {
     self.name = name
     self.type = type
   }
@@ -50,7 +50,7 @@ public struct BeerRecipe {
   public var version: Int = 1
 
   /// May be one of "Extract", "Partial Mash" or "All Grain"
-  public var type: `Type`
+  public var type: RecipeType
 
   /// The style of the beer this recipe is associated with.
   public var style: Style? = nil
