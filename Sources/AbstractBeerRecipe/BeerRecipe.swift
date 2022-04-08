@@ -30,6 +30,17 @@ public struct BeerRecipe {
     case allGrain
   }
   
+  
+  // MARK: - Initialization
+  
+  public init(name: String, type: `Type`) {
+    self.name = name
+    self.type = type
+  }
+  
+  
+  // MARK: - Public Properties
+  
   /// Name of the recipe.
   public var name: String
 
