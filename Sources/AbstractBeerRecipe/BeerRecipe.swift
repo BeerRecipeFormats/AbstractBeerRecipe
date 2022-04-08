@@ -24,7 +24,7 @@ public struct BeerRecipe {
   
   // MARK: - Enums
   
-  public enum `Type`: String {
+  public enum `Type`: String, RawRepresentable {
     case extract      = "Extract"
     case partialMash  = "Partial Mash"
     case allGrain     = "All Grain"
