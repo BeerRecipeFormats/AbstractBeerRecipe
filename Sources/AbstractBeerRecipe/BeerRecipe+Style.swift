@@ -26,7 +26,9 @@ public extension BeerRecipe {
     
     // MARK: - Public Enums
     
-    public enum StyleType: String {
+    public enum StyleType: String, RawRepresentable {
+      public typealias RawValue = String
+      
       case lager = "Lager"
       case ale   = "Ale"
       case mead  = "Mead"
