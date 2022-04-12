@@ -36,6 +36,13 @@ public extension BeerRecipe {
     }
     
     
+    // MARK: - Initialization
+    
+    public init(name: String) {
+      self.name = name
+    }
+    
+    
     // MARK: - Public Properties
 
     /// Name of the style profile – usually this is the specific name of the style – for example "Scottish Wee Heavy Ale"
