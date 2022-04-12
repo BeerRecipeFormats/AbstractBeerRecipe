@@ -139,7 +139,7 @@ public struct BeerRecipe {
   public var ageTemp: UInt8? = nil
 
   /// Date brewed
-  public var date: Date? = nil
+  public var date: String? = nil
 
   /// Floating point value corresponding to the target volumes of CO2 used to carbonate this beer.
   public var carbonation: Float? = nil
