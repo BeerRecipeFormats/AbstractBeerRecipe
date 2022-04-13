@@ -23,6 +23,16 @@ import Foundation
 public extension BeerRecipe {
   
   struct Equipment {
+    
+    // MARK: - Initialization
+    
+    public init(name: String) {
+      self.name = name
+    }
+    
+    
+    // MARK: - Public Properties
+    
     /// Name of the equipment profile – usually a text description of the brewing setup.
     public var name: String
 
