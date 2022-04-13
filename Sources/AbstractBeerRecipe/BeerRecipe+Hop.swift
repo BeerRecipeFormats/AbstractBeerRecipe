@@ -26,24 +26,37 @@ public extension BeerRecipe {
     
     // MARK: - Public Enums
     
-    public enum Usage {
-      case boil
-      case dryHop
-      case mash
-      case firstWort
-      case aroma
+    public enum Usage: String, RawRepresentable {
+      public typealias RawValue = String
+      
+      case boil = "Boil"
+      case dryHop = "Dry Hop"
+      case mash = "Mash"
+      case firstWort = "First Wort"
+      case aroma = "Aroma"
     }
     
-    public enum `Type`{
-      case bittering
-      case arome
-      case both
+    public enum HopType: String, RawRepresentable {
+      public typealias RawValue = String
+      
+      case bittering = "Bittering"
+      case aroma = "Aroma"
+      case both = "Both"
     }
     
-    public enum Form {
-      case pellet
-      case plug
-      case leaf
+    public enum Form: String, RawRepresentable {
+      public typealias RawValue = String
+      
+      case pellet = "Pellet"
+      case plug = "Plug"
+      case leaf = "Leaf"
+    }
+    
+    
+    // MARK: - Initialization
+    
+    public init(name: String) {
+      self.name = name
     }
     
     
@@ -71,7 +84,7 @@ public extension BeerRecipe {
     public var notes: String? = nil
 
     /// Hop type
-    public var type: `Type`? = nil
+    public var type: HopType? = nil
 
     /// Hop form
     public var form: Form? = nil
