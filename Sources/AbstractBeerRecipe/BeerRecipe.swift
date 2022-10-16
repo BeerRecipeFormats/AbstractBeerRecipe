@@ -77,6 +77,9 @@ public struct BeerRecipe {
   /// The percent brewhouse efficiency to be used for estimating the starting gravity of the beer. Not required for
   /// "Extract" recipes, but is required for "Partial Mash" and "All Grain" recipes.
   public var efficiency: Float? = nil
+  
+  /// The estimated bitterness level of the beer in IBUs
+  public var ibu: UInt16? = nil
 
   /// Zero or more HOP ingredient records.
   public var hops: [Hop] = []
