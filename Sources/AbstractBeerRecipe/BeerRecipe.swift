@@ -83,6 +83,9 @@ public struct BeerRecipe {
   
   /// The estimated color of the beer in user defined color units.
   public var color: String? = nil
+  
+  /// Estimated percent alcohol by volume for this recipe.
+  public var abv: Float? = nil
 
   /// Zero or more HOP ingredient records.
   public var hops: [Hop] = []
