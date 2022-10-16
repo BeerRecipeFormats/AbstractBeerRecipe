@@ -80,6 +80,9 @@ public struct BeerRecipe {
   
   /// The estimated bitterness level of the beer in IBUs
   public var ibu: UInt16? = nil
+  
+  /// The estimated color of the beer in user defined color units.
+  public var color: String? = nil
 
   /// Zero or more HOP ingredient records.
   public var hops: [Hop] = []
